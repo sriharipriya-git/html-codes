@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even or odd</title>
+    <link rel="stylesheet" href="sri.css">
+
+</head>
+<body>
+   <div class="container">
+    <h1> To Check Even or Odd number  </h1>
+    <lable for="txtNum">Number:</lable>
+    <input type="Number" id="Number" value="0"/><br/><br/>
+    
+    <input type="button" value="Click Here" onclick="test( )"/>
+    <br/><br/>
+   <span id="spanResult">Enter an integer</span>
+   </div>
+   <script type="text/javascript">
+      function test( )
+      {
+
+        let num=Number(document.getElementById("Number").value);
+        if(num%2==0)
+        {
+            document.getElementById("spanResult").innerHTML=num + "is Even Number";
+        }
+        else{
+            document.getElementById("spanResult").innerHTML=num + "is Odd Number";
+        }
+      }
+   </script>
+</body>
+</html>
+ .container{
+    border:2px solid red ;
+    height: 300px;
+    width:500px;
+    margin:250px;
+    box-shadow: 0 0 4px black;
+    text-align: center;
+    background-color: gray;
+}
